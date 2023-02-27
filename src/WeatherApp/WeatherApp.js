@@ -1,17 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
-import { Button, Container, IconButton, Typography } from "@mui/material";
+import { IconButton, Typography } from "@mui/material";
 import WbSunnyIcon from '@mui/icons-material/WbSunny';
-import NightsStayIcon from '@mui/icons-material/NightsStay';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
-import AcUnitIcon from '@mui/icons-material/AcUnit';
-import GrainIcon from '@mui/icons-material/Grain';
-import CloudIcon from '@mui/icons-material/Cloud';
-import WbTwilightIcon from '@mui/icons-material/WbTwilight';
 import ReplayCircleFilledIcon from '@mui/icons-material/ReplayCircleFilled';
-import { width } from "@mui/system";
-import classes from './weatherStyles.css'
-import RecipeReviewCard from "./RecipeReviewCard";
+import RecipeReviewCard from "./components/RecipeReviewCard";
 
 // 'http://api.weatherapi.com/v1/current.json?key=89e495f27f4b4ddca1044654231502&q=Tashkent&aqi=yes'
 function WeatherApp() {
@@ -45,7 +38,7 @@ function WeatherApp() {
 
 
   return (
-      <div style={{margin:'auto',width:'400px',marginTop:'15%'}}>
+      <div style={{margin:'auto',width:'400px',marginTop:'10%'}}>
         <RecipeReviewCard
         time={ <Typography sx={{fontFamily:'fantasy',fontSize:'35px'}}>{country}</Typography> }
         region={<Typography sx={{fontFamily:'fantasy',fontSize:'35px'}}>{region}</Typography>}
@@ -54,7 +47,7 @@ function WeatherApp() {
           weather1 === 'Rain' ?  
           <ThunderstormIcon sx={{width:'250px',height:'300px',color:'darkblue'}}></ThunderstormIcon> : <WbSunnyIcon sx={{width:'250px',height:'300px',color:'#e8e041'}}></WbSunnyIcon>
         } 
-         text={weather1 ? 'Rain' : 'Sunny'}
+         text={weather1}
 
          number={ <div style={{position:'relative'}}>
          { gradus ? <Typography sx={{fontFamily:'fantasy',fontSize:'35px'}}>{gradus + ' C'}</Typography> : null}

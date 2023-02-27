@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import './style.css'
-import TodoApp from './TodoApp';
-import Calculator from './Calculator';
+import TodoApp from './TodoList/TodoApp';
+import Calculator from './Calculator/Calculator';
 import { NavLink, Route, Routes } from 'react-router-dom';
-import WeatherApp from './WeatherApp';
+import WeatherApp from './WeatherApp/WeatherApp';
 import { Button } from '@mui/material';
 
 

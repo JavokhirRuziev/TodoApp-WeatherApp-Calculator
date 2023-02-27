@@ -1,7 +1,7 @@
 import { Button } from '@mui/material'
 import React from 'react'
 
-function Button4({children,style,onClick}) {
+function LabelButton({children,style,onClick}) {
   return (
     <div>
       <Button onClick={onClick} variant='contained' color='secondary' style={style}>{children}</Button>
@@ -9,4 +9,4 @@ function Button4({children,style,onClick}) {
   )
 }
 
-export default Button4
+export default LabelButton

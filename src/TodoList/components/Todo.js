@@ -2,7 +2,7 @@ import { Close, Edit, Remove } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
 import React, { useState } from 'react'
 import TodoForm from './TodoForm'
-import './style.css'
+import '../style.css'
 
 function Todo({todos,completeTodo,removeTodo,updateTodo}) {
   const [edit, setEdit] = useState({

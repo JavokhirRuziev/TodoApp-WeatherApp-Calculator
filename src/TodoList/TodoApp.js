@@ -4,8 +4,8 @@ import React, { useRef, useState } from 'react'
 import './style.css'
 
 function TodoApp() {
-  const [Input, setInput] = useState('')
-  const [Todos,setTodos] = useState([])
+  const [input, setInput] = useState('')
+  const [todos,setTodos] = useState([])
   // const [edit,setEdit] = useState(false)
 
   // const ddd = ()=>{
@@ -13,10 +13,10 @@ function TodoApp() {
   // }
 
   const addTodo = ()=>{
-    if(!Input.trim()){
+    if(!input.trim()){
       return 
     }
-    const newTodos = [...Todos,{name: Input,id:Date.now()}]
+    const newTodos = [...todos,{name: input,id:Date.now()}]
     setTodos(newTodos)
     setInput('')
   }
@@ -26,7 +26,7 @@ function TodoApp() {
   }
 
   const removeTodo = (id)=>{
-    const removeArr = [...Todos].filter(todo=>todo.id !== id)
+    const removeArr = [...todos].filter(todo=>todo.id !== id)
     setTodos(removeArr)
   }
 
@@ -38,12 +38,12 @@ function TodoApp() {
         <TextField 
       label='Add Todo'
       variant='standard'
-      value={Input}
+      value={input}
       onChange={e=>setInput(e.target.value)}
       />
     <Button variant='contained' onClick={addTodo}>Add</Button>
         </div>
-    {Todos.map((todo)=>
+    {todos.map((todo)=>
       <Card className='card'  onClick={done}>
         <div className='created'>
           <Typography>{todo.name}</Typography>
