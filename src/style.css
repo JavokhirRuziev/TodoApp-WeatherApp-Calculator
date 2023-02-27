@@ -1,28 +1,28 @@
-body{
+body {
   background: #5db1db;
-background: -moz-linear-gradient(left,  #5db1db -1%, #6bb1d9 0%, #30d0f0 0%, #5db1db 0%, #44aed8 0%, #224350 100%, #35b4db 100%, #1f4459 100%);
-background: -webkit-linear-gradient(left,  #5db1db -1%,#6bb1d9 0%,#30d0f0 0%,#5db1db 0%,#44aed8 0%,#224350 100%,#35b4db 100%,#1f4459 100%);
-background: linear-gradient(to right,  #5db1db -1%,#6bb1d9 0%,#30d0f0 0%,#5db1db 0%,#44aed8 0%,#224350 100%,#35b4db 100%,#1f4459 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db1db', endColorstr='#1f4459',GradientType=1 );
+  background: -moz-linear-gradient(left, #5db1db -1%, #6bb1d9 0%, #30d0f0 0%, #5db1db 0%, #44aed8 0%, #224350 100%, #35b4db 100%, #1f4459 100%);
+  background: -webkit-linear-gradient(left, #5db1db -1%, #6bb1d9 0%, #30d0f0 0%, #5db1db 0%, #44aed8 0%, #224350 100%, #35b4db 100%, #1f4459 100%);
+  background: linear-gradient(to right, #5db1db -1%, #6bb1d9 0%, #30d0f0 0%, #5db1db 0%, #44aed8 0%, #224350 100%, #35b4db 100%, #1f4459 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5db1db', endColorstr='#1f4459', GradientType=1);
 }
 
-.Active{
+.Active {
   background: #1f4459;
 }
 
 
 
-.style{
+.style {
   text-decoration: line-through black 2px;
 }
 
-.todoApp{
-  width:300px;
+.todoApp {
+  width: 300px;
   margin: auto;
   margin-top: 15%;
 }
 
-.created{
+.created {
   width: auto;
   display: flex;
   justify-content: center;
@@ -31,11 +31,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db1db', end
   color: white;
 }
 
-.card{
+.card {
   margin-top: 10px;
 }
 
-.main{
+.main {
   width: auto;
   display: flex;
   justify-content: center;
